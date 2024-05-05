@@ -5,6 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
+port: 4001
+
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -12,7 +14,7 @@ title                    : "Telecomlab Publish"
 title_separator          : "-"
 name                     : &name "Telecom LAB"
 description              : &description "personal description"
-url                      : https://telecomlabfen.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://telecomlabfen.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "TelecomlabFEN/telecomlabfen.github.io"
 
@@ -281,7 +283,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: 	Asia/Vientiane # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
