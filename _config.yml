@@ -10,7 +10,7 @@ port: 4001
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Telecomlab Publish"
+title                    : "Telecomlab FEN"
 title_separator          : "-"
 name                     : &name "Telecom LAB"
 description              : &description "personal description"
@@ -214,10 +214,15 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  profiles:
+    output: true
+    permalink: /:collection/:path/
+  
 
 
 # Defaults
 defaults:
+
   # _posts
   - scope:
       path: ""
@@ -271,6 +276,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _profiles
+  - scope:
+      path: ""
+      type: profiles
+    values:
+      layout: single
+      author_profile: false
+      share: false
 
 
 # Sass/SCSS
@@ -283,7 +296,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: 	Asia/Vientiane # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Author Profile"
+permalink: /profile/
+author_profile: false
+---
+
+{% include base_path %}
+{% for post in site.profiles %}
+  {% include archive-single.html %}
+{% endfor %}
