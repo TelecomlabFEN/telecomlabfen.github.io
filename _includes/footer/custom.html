@@ -50,13 +50,13 @@ text-align: center;"></span>
     })
     .then(response => {
         if (response.ok) {
-        // Handle successful form submission
-        console.log('Form submitted successfully');
-        // Optionally, reset the form after successful submission
-        form.reset();
+            // Handle successful form submission
+            console.log('Form submitted successfully');
+            // Optionally, reset the form after successful submission
+            form.reset();
         } else {
-        // Handle failed form submission
-        console.error('Form submission failed');
+            // Handle failed form submission
+            console.error('Form submission failed');
         }
     })
     .catch(error => {
