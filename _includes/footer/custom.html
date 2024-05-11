@@ -1,71 +1,14 @@
 <!-- start custom footer snippets -->
+
 <body>
 <h3 style="justify-content: center; display: flex;">Subscribe to newsletter</h3>
 
-<form name="submit-to-google-sheet" method="post" style="display: flex;
-flex-wrap: wrap;
-justify-content: center;
-max-width: 100%;" >
-<input type="email" name="email" placeholder="enter your email" style="border: 1px solid #52adc8;
-    border-radius: 8px;
-    outline: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px;
-    width: 100%;
-    max-width: 300px; ">
-<button type="submit" style="background: #52adc8;
-border: none;
-border-radius: 8px;
-outline: none;
-cursor: pointer;
-padding: 10px 20px;
-font-size: 16px;
-margin: 5px;
-width: 100%;
-max-width: 200px; ">submit</button>
+<form name="submit-to-google-sheet" method="post" class="form-f" >
+<input class="input-f" type="email" name="email" placeholder="enter your email" >
+<button type="submit" class="button-f" >submit</button>
 </form>
-<span id="msg" style="color: #52adc8;
-margin-top: 12px;
-display: block;
-text-align: center;"></span>
-<script>
+<span class="span-f" id="msg" ></span>
 
-    const form = document.forms['submit-to-google-sheet'];
-
-    form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Create a new FormData object to collect form data
-    const formData = new FormData(form);
-    
-    // Fetch URL for your Google Apps Script endpoint
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLKGkl3qhAW-HCKtGwOPM_uvoIrydf6JlG_6m-P75RYPhdKqeBUGDe2GUHOVpaL7xQNg/exec';
-    
-    // Send a POST request to the Google Apps Script endpoint
-    fetch(scriptURL, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (response.ok) {
-            // Handle successful form submission
-            console.log('Form submitted successfully');
-            // Optionally, reset the form after successful submission
-            form.reset();
-        } else {
-            // Handle failed form submission
-            console.error('Form submission failed');
-        }
-    })
-    .catch(error => {
-        // Handle errors
-        console.error('Error:', error);
-    });
-});
-
-</script>
-<!---
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwYNYvFss8eU3sH_NJ8YnzLcPoqaPZQb8spPLMfxtAYC9M50HT8Ik2bvuxBpOIDOmrejw/exec';
     const form = document.forms['submit-to-google-sheet'];
@@ -82,12 +25,44 @@ text-align: center;"></span>
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
-    })
-
-    
+    })   
 </script>
---->
+
 <style>
+    .form-f{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .input-f{
+        border: 1px solid #52adc8;
+        border-radius: 8px;
+        outline: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .button-f{
+        background: #52adc8;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        width: 100%;
+        max-width: 200px;
+    }
+    .span-f{
+        color: #52adc8;
+        margin-top: 12px;
+        display: block;
+        text-align: center;
+    }
     @media only screen and (min-width: 768px) {
         form input {
             width: auto;
