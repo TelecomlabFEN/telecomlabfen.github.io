@@ -472,6 +472,7 @@ body:hover .visually-hidden button {
 .footnote {
   color: mix(#fff, $gray, 25%);
   text-decoration: none;
+
 }
 
 .footnotes {
@@ -479,7 +480,7 @@ body:hover .visually-hidden button {
 
   ol, li, p {
     margin-bottom: 0;
-    font-size: $type-size-6;
+    font-size: 1em;
   }
 }
 

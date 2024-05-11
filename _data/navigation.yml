@@ -1,12 +1,10 @@
 # main links links
 main:
-
-  - title: "Event"
-    url: /event/    
- 
   - title: "Posts"
     url: /blog-post/
     
-
+  - title: "Event"
+    url: /event/    
+ 
 
   
