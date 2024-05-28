@@ -10,13 +10,13 @@ port: 4001
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Telecomlab FEN"
+title                    : "ENTC"
 title_separator          : "-"
-name                     : &name "Telecom LAB"
-description              : &description "personal description"
-url                      : "https://telecomlabfen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "ENTC"
+description              : &description "This is ENTC Update"
+url                      : "https://entcfen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "TelecomlabFEN/telecomlabfen.github.io"
+repository               : "entcfen/entcfen.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -37,9 +37,9 @@ author:
   googlescholar    : 
   impactstory      : # URL
 
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : ""
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : ""
 
   researchgate     : # URL
 
