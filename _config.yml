@@ -10,7 +10,7 @@ port: 4000
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "ENTC FEN"
+title                    : "ENTC LAB"
 title_separator          : "-"
 name                     : &name "ENTC"
 description              : &description "This is ENTC Update"
